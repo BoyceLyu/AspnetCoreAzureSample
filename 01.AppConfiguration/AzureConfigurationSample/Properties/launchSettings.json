@@ -12,7 +12,8 @@
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "AppConfiguration": "Endpoint=https://boycelyu-work-azc.azconfig.io;Id=aKp7-la-s0:1AjpV9EjnoESa4c1LN7v;Secret=GF1dz5tPIpVlpEh6YtTGK/FzrXyi1bi5nU6JpB12g7U=",
       },
       "applicationUrl": "https://localhost:7014;http://localhost:5014",
       "dotnetRunMessages": true

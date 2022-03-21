@@ -1,20 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Options;
 
 namespace AzureConfigurationSample.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        public Settings Settings { get; }
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(IOptionsSnapshot<Settings> options)
         {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-
+            Settings = options.Value;
         }
     }
 }
